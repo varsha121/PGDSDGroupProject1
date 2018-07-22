@@ -10,7 +10,7 @@ import javax.transaction.Transactional;
 import java.util.Date;
 import java.util.List;
 @Repository
-public interface CommentRepository {
+public interface CommentRepository extends CrudRepository<Comment ,String> {
 
 
     @Transactional
