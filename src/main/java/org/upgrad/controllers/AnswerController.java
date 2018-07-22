@@ -117,7 +117,7 @@ import java.util.List;
 
 
                 else {
-                    return new ResponseEntity<>("You do not have right to delete this answer !", HttpStatus.OK);
+                    return new ResponseEntity<>("You do not have right to delete this answer !", HttpStatus.FORBIDDEN);
                 }
             }
         }
