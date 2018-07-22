@@ -54,7 +54,7 @@ public class AdminController {
         }
 
         else {
-            return new ResponseEntity<>("You do not have rights to access all users!", HttpStatus.UNAUTHORIZED);
+            return new ResponseEntity<>("You do not have rights to access all users!", HttpStatus.FORBIDDEN);
         }
     }
 
@@ -75,7 +75,7 @@ public class AdminController {
 
 
         else {
-            return new ResponseEntity<>("You do not have rights to add categories.", HttpStatus.UNAUTHORIZED);
+            return new ResponseEntity<>("You do not have rights to add categories.", HttpStatus.FORBIDDEN);
         }
     }
 }
