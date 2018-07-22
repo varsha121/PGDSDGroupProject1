@@ -7,7 +7,7 @@ import java.util.Date;
 
 
 @Entity
-@Table(name ="user_profile")
+@Table(name ="notification")
 public class Notification implements Serializable{
 
 
